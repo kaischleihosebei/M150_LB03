@@ -1,15 +1,12 @@
 <?php
-// used to get mysql database connection
 class Database{
 
-    // specify your own database credentials
     private $host = "localhost";
     private $db_name = "m150_restapi";
     private $username = "root";
     private $password = "";
     public $conn;
 
-    // get the database connection
     public function getConnection(){
 
         $this->conn = null;
